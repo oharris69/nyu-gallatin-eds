@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://gallatin.nyu.edu/",
+    "path": "/index",
+    "status": "success",
+    "title": "Home",
+    "template": "homepage",
+    "blocks": [
+      "carousel",
+      "columns",
+      "video",
+      "carousel",
+      "columns",
+      "columns",
+      "columns",
+      "carousel",
+      "cards",
+      "cards",
+      "embed"
+    ]
+  }
+]
