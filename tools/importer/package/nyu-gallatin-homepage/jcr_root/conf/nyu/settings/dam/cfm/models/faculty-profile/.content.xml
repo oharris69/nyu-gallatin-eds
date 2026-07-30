@@ -59,19 +59,15 @@
                             name="bio"
                             valueType="string" metaType="text-rich" default=""/>
                         <education jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                            fieldLabel="Education" fieldDescription="One entry per degree (e.g. M.F.A., Nonfiction, Columbia University, 2003).">
-                            <field jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                name="education" valueType="string[]" metaType="text-multi"/>
-                        </education>
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Education" fieldDescription="One entry per degree (e.g. M.F.A., Nonfiction, Columbia University, 2003)."
+                            name="education"
+                            valueType="string[]" metaType="text-single" multiple="{Boolean}true"/>
                         <researchInterests jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                            fieldLabel="Research Interests" fieldDescription="One interest per entry (e.g. music and culture writing).">
-                            <field jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                name="researchInterests" valueType="string[]" metaType="text-multi"/>
-                        </researchInterests>
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Research Interests" fieldDescription="One interest per entry (e.g. music and culture writing)."
+                            name="researchInterests"
+                            valueType="string[]" metaType="text-single" multiple="{Boolean}true"/>
                         <publications jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/cfm/models/editor/components/rteledit"
                             fieldLabel="Publications" fieldDescription="Books, articles, and other published work (rich text)."

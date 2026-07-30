@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.4 — 2026-07-30T07:00:00Z
+- Fix faculty-profile multi-value fields (education, researchInterests): use textfield + multiple=true + valueType string[] (CF model pattern) instead of Granite multifield wrapper, which AEM could not parse (installed with no name/valueType)
+- Artifact: dist/nyu-gallatin-homepage-1.4.4.zip
+
 ## 1.4.3 — 2026-07-30T06:00:00Z
 - Deliver CF models into AEM-validated /conf/nyu (Content Fragment Models enabled) instead of hand-authored /conf/nyu-gallatin-eds; repoint CF instances cq:model to /conf/nyu; drop stale container
 - Artifact: dist/nyu-gallatin-homepage-1.4.3.zip
