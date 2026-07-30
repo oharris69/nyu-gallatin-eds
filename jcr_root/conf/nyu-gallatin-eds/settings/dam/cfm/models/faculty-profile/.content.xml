@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:title="Faculty Profile"
+    jcr:description="NYU Gallatin faculty profile: identity, contact, biography, education, research interests, publications, and honors."
+    allowedPaths="[/content/dam/nyu-gallatin-eds(/.*)?]"
+    status="enabled">
+    <jcr:content jcr:primaryType="nt:unstructured" sling:resourceType="dam/cfm/models/console/components/data/entity/default">
+        <model sling:resourceType="wcm/scaffolding/components/scaffolding" jcr:primaryType="nt:unstructured">
+            <cq:dialog jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog">
+                <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <name jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Name" fieldDescription="Full display name (e.g. Amanda Petrusich)."
+                            name="name" required="{Boolean}true"
+                            valueType="string" metaType="text-single"/>
+                        <role jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Title / Role" fieldDescription="Appointment title (e.g. Part-time Faculty, Clinical Associate Professor)."
+                            name="role"
+                            valueType="string" metaType="text-single"/>
+                        <department jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Department / School" fieldDescription="Home department or school."
+                            name="department"
+                            valueType="string" metaType="text-single"/>
+                        <photo jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            fieldLabel="Photo" fieldDescription="Portrait image reference from the DAM."
+                            name="photo"
+                            valueType="string" metaType="content-reference"
+                            fileReferenceParameter="./photo"/>
+                        <email jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Email" fieldDescription="Contact email address."
+                            name="email"
+                            valueType="string" metaType="text-single"/>
+                        <pronouns jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Pronouns" fieldDescription="Preferred pronouns (e.g. she/her)."
+                            name="pronouns"
+                            valueType="string" metaType="text-single"/>
+                        <profileUrl jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Profile URL" fieldDescription="Canonical faculty page path or URL."
+                            name="profileUrl"
+                            valueType="string" metaType="text-single"/>
+                        <shortBio jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Short Bio" fieldDescription="One or two sentence summary for cards and listings."
+                            name="shortBio"
+                            valueType="string" metaType="text-multi"/>
+                        <bio jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/rteledit"
+                            fieldLabel="Biography" fieldDescription="Full biography (rich text)."
+                            name="bio"
+                            valueType="string" metaType="text-rich" default=""/>
+                        <education jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            fieldLabel="Education" fieldDescription="One entry per degree (e.g. M.F.A., Nonfiction, Columbia University, 2003).">
+                            <field jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                name="education" valueType="string[]" metaType="text-multi"/>
+                        </education>
+                        <researchInterests jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            fieldLabel="Research Interests" fieldDescription="One interest per entry (e.g. music and culture writing).">
+                            <field jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                name="researchInterests" valueType="string[]" metaType="text-multi"/>
+                        </researchInterests>
+                        <publications jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/rteledit"
+                            fieldLabel="Publications" fieldDescription="Books, articles, and other published work (rich text)."
+                            name="publications"
+                            valueType="string" metaType="text-rich" default=""/>
+                        <awards jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/rteledit"
+                            fieldLabel="Awards &amp; Honors" fieldDescription="Awards, honors, fellowships, and residencies (rich text)."
+                            name="awards"
+                            valueType="string" metaType="text-rich" default=""/>
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>

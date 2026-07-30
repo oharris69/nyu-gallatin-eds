@@ -2,5 +2,7 @@
 <workspaceFilter version="1.0">
     <filter root="/content/nyu-gallatin-eds/language-masters/en"/>
     <filter root="/content/dam/nyu-gallatin-eds/en/fragments/lecturers/amanda-petrusich"/>
+    <filter root="/content/dam/nyu-gallatin-eds/en/fragments/faculty/amanda-petrusich"/>
     <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer"/>
+    <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/faculty-profile"/>
 </workspaceFilter>

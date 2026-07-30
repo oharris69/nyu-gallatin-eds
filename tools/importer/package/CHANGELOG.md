@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.0 — 2026-07-30T03:00:00Z
+- Add rich faculty-profile CF model + Amanda Petrusich faculty CF (name/role/dept/email/pronouns/shortBio/bio/education/researchInterests/publications/awards); repoint faculty page to new CF
+- Artifact: dist/nyu-gallatin-homepage-1.4.0.zip
+
 ## 1.3.2 — 2026-07-30T02:00:00Z
 - Header polish: white bold menu labels, compact dark utility pill, single caret, two-row layout
 - Artifact: dist/nyu-gallatin-homepage-1.3.2.zip

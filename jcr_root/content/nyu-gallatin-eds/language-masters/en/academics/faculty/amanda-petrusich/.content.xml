@@ -3,7 +3,7 @@
   <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent">
     <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
       <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,sec-spacing,sec-spacing-bottom,style,sec-full-width]">
-        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" contentFragmentVariation="master" displaystyle="image-left" model="contentfragment" modelFields="[reference,contentFragmentVariation,displaystyle,alignment,ctastyle]" name="Content Fragment" reference="/content/dam/nyu-gallatin-eds/en/fragments/lecturers/amanda-petrusich"></block>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" contentFragmentVariation="master" displaystyle="image-left" model="contentfragment" modelFields="[reference,contentFragmentVariation,displaystyle,alignment,ctastyle]" name="Content Fragment" reference="/content/dam/nyu-gallatin-eds/en/fragments/faculty/amanda-petrusich"></block>
       </section>
       <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="light" model="section" modelFields="[name,sec-spacing,sec-spacing-bottom,style,sec-full-width]">
         <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Courses" titleType="h2"/>
