@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.3.2 — 2026-07-30T02:00:00Z
+- Header polish: white bold menu labels, compact dark utility pill, single caret, two-row layout
+- Artifact: dist/nyu-gallatin-homepage-1.3.2.zip
+
 ## 1.3.1 — 2026-07-30T01:00:00Z
 - Nav sections need unique node names (section/section_1/section_2); JCR kept only last on import
 - Artifact: dist/nyu-gallatin-homepage-1.3.1.zip
