@@ -43,7 +43,7 @@
   --tab-background-color: rgb(0 0 0 / 2%);
 
   /* brand-scoped header/footer variables with sensible defaults */
-  --nav-background-color: var(--brand-nav-background-color, #0000008c);
+  --nav-background-color: var(--brand-nav-background-color, var(--gallatin-violet, #57068c));
   --nav-text-color: var(--brand-nav-text-color, #fff);
   --footer-background-color: var(--brand-footer-background-color, #000);
   --footer-text-color: var(--brand-footer-text-color, #fff);

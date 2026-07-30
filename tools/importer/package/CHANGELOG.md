@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.3.0 — 2026-07-30T00:00:00Z
+- Split nav into brand/sections/tools sections (fixes flat/expanded menu); violet banner via --nav-background-color token; scoped brand logo mask
+- Artifact: dist/nyu-gallatin-homepage-1.3.0.zip
+
 ## 1.2.1 — 2026-07-30T20:05:00Z
 - Fix nav logo: render the NYU Gallatin wordmark via CSS mask on .nav-brand instead of a franklin image node (which produced src=about:error for the static /icons/ SVG). Brand reverts to accessible text link.
 - Artifact: dist/nyu-gallatin-homepage-1.2.1.zip
