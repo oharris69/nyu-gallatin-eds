@@ -52,23 +52,17 @@ function sourceMarkdown(doc) {
  *  2. Stray `item1="[object Object]"` attribute md2jcr emits on carousel
  *     container blocks (the repeated items already serialize as item_N child
  *     nodes; this attribute is spurious).
- *  3. Nav brand logo: md2jcr coerces the link-wrapped logo <img> into an empty
- *     `button` (link only, image dropped). The header block's addLogoLink()
- *     expects a real image in .nav-brand, so rewrite that button into an image
- *     node referencing the logo SVG.
+ *  3. Nav brand logo: keep the brand as a plain text link. md2jcr renders it as
+ *     a `button` node with link="/" and the school name as linkText — that's the
+ *     accessible label. The visual NYU Gallatin logo (a static /icons/ SVG) is
+ *     applied via CSS on .nav-brand in header.css. We do NOT use a franklin
+ *     image node for it: franklin.delivery treats the image field as a DAM asset
+ *     and emits src="about:error" for a static code-path SVG.
  */
 function sanitizeXml(xml) {
   let out = xml.replace(/item\d+="\[object Object\]"\s*/g, '');
   out = out.replace(/&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9a-fA-F]+;)/g, '&amp;');
   return out;
-}
-
-// Nav-only fixup: replace the empty brand button with an image (logo) node.
-function fixNavBrandLogo(xml) {
-  return xml.replace(
-    /<button sling:resourceType="core\/franklin\/components\/button\/v1\/button" jcr:primaryType="nt:unstructured" link="\/" linkText=""\s*\/>/,
-    '<image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/icons/nyu-gallatin-logo.svg" imageAlt="NYU Gallatin School of Individualized Study" link="/"/>',
-  );
 }
 
 const results = [];
@@ -84,7 +78,6 @@ for (const doc of DOCS) {
   }
   const outDir = path.join(JCR_ROOT, doc.jcr);
   xml = sanitizeXml(xml);
-  if (doc.jcr.endsWith('/nav')) xml = fixNavBrandLogo(xml);
   fs.mkdirSync(outDir, { recursive: true });
   const outFile = path.join(outDir, '.content.xml');
   fs.writeFileSync(outFile, xml, 'utf8');

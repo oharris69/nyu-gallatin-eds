@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.2.1 — 2026-07-30T20:05:00Z
+- Fix nav logo: render the NYU Gallatin wordmark via CSS mask on .nav-brand instead of a franklin image node (which produced src=about:error for the static /icons/ SVG). Brand reverts to accessible text link.
+- Artifact: dist/nyu-gallatin-homepage-1.2.1.zip
+
 ## 1.2.0 — 2026-07-30T19:35:00Z
 - Add NYU Gallatin logo SVG (icons/) wired into nav brand; header JS null-guards for nested-ul nav (no more toggleAllNavSections crash).
 - Artifact: dist/nyu-gallatin-homepage-1.2.0.zip

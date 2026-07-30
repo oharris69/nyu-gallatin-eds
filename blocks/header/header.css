@@ -559,3 +559,29 @@ header nav .nav-tools .lang-switcher {
     bottom: 0.5em;
   }
 }
+
+/* ============================================================
+   NYU Gallatin — brand logo (static /icons/ SVG via CSS).
+   The nav brand is authored as a text link (accessible label);
+   we render the wordmark logo here instead of routing a static
+   SVG through the franklin DAM image component (which emits
+   src="about:error" for non-DAM code-path assets).
+   ============================================================ */
+header .nav-brand a {
+  display: inline-block;
+  width: 220px;
+  height: 31px;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background-color: var(--nav-text-color, #fff);
+  mask: url("/icons/nyu-gallatin-logo.svg") no-repeat left center;
+  mask-size: contain;
+}
+
+@media (width >= 900px) {
+  header .nav-brand a {
+    width: 260px;
+    height: 36px;
+  }
+}
