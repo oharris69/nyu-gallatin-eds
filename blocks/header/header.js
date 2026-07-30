@@ -109,6 +109,7 @@ async function overlayLoad(navSections) {
  * @param {*} forceExpanded Optional param to force nav expand behavior when not null
  */
 async function toggleMenu(nav, navSections, forceExpanded = null) {
+  if (!nav || !navSections) return;
 
   /*
   if (window.navigationData) {
@@ -116,7 +117,7 @@ async function toggleMenu(nav, navSections, forceExpanded = null) {
   } else {
     return;
   }*/
-  
+
   const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
   const button = nav.querySelector('.nav-hamburger button');
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
