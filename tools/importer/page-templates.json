@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://gallatin.nyu.edu/"],
+      "representativeUrl": "https://gallatin.nyu.edu/",
+      "coverageGaps": [],
+      "description": "NYU Gallatin homepage (tc--home template): hero carousel of alumni, 50-50 features, full-width video, tabbed faculty stories, stats module, full-width CTA, image gallery, portrait cards, and news article cards.",
+      "blocks": [
+        { "name": "carousel", "instances": ["section.cc--hero-home"], "section": "hero" },
+        { "name": "columns", "instances": ["section.cc--50-50-feature.bg-violet"], "section": "violet" },
+        { "name": "video", "instances": ["section.cc--full-width-video"] },
+        { "name": "carousel", "instances": ["section.cc--tabbed-stories-carousel"], "section": "violet" },
+        { "name": "columns", "instances": ["section.cc--stats"] },
+        { "name": "columns", "instances": ["section.cc--full-width-cta"], "section": "orange" },
+        { "name": "columns", "instances": ["section.cc--50-50-feature.bg-white"] },
+        { "name": "carousel", "instances": ["section.cc--gallery"] },
+        { "name": "cards", "instances": ["section.cc--portrait-image-cards"], "section": "violet" },
+        { "name": "cards", "instances": ["section.cc--article-cards"], "section": "violet" },
+        { "name": "embed", "instances": ["div.cc--code-embed"] }
+      ],
+      "sections": [
+        { "id": "s1", "name": "Hero Carousel", "selector": "div.hero-home", "style": "deep-violet", "blocks": ["carousel"], "defaultContent": [] },
+        { "id": "s2", "name": "It's Your Journey", "selector": "section.cc--50-50-feature.bg-violet", "style": "violet", "blocks": ["columns"], "defaultContent": [] },
+        { "id": "s3", "name": "Discovery Video", "selector": "div.full-width-video", "style": null, "blocks": ["video"], "defaultContent": [] },
+        { "id": "s4", "name": "Meet Your Guides", "selector": "section.cc--tabbed-stories-carousel", "style": "violet", "blocks": ["carousel"], "defaultContent": [] },
+        { "id": "s5", "name": "The Gallatin Effect (stats)", "selector": "section.cc--stats", "style": "light", "blocks": ["columns"], "defaultContent": [] },
+        { "id": "s6", "name": "Ready to Begin CTA", "selector": "section.cc--full-width-cta", "style": "orange", "blocks": ["columns"], "defaultContent": [] },
+        { "id": "s7", "name": "Learn Without Walls", "selector": "section.cc--50-50-feature.bg-white", "style": "light", "blocks": ["columns"], "defaultContent": [] },
+        { "id": "s8", "name": "Culture of Collaboration Gallery", "selector": "section.cc--gallery", "style": null, "blocks": ["carousel"], "defaultContent": [] },
+        { "id": "s9", "name": "Community of Individuals", "selector": "section.cc--portrait-image-cards", "style": "violet", "blocks": ["cards"], "defaultContent": [] },
+        { "id": "s10", "name": "News and Stories", "selector": "section.cc--article-cards", "style": "violet", "blocks": ["cards"], "defaultContent": [] },
+        { "id": "s11", "name": "Code Embed", "selector": "section.cc--code-embed", "style": null, "blocks": ["embed"], "defaultContent": [] }
+      ]
+    }
+  ]
+}

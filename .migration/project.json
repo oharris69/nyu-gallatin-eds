@@ -1,0 +1,14 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "nyu-gallatin-eds": {
+      "previewOrg": "oharris69",
+      "previewSite": "nyu-gallatin-eds",
+      "aemSitePath": "/content/nyu-gallatin-eds",
+      "aemAssetsFolderPath": "/content/dam/nyu-gallatin-eds",
+      "aemSiteName": "nyu-gallatin-eds",
+      "aemSiteTitle": "NYU Gallatin",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  }
+}
