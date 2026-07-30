@@ -35,6 +35,22 @@
         { "id": "s10", "name": "News and Stories", "selector": "section.cc--article-cards", "style": "violet", "blocks": ["cards"], "defaultContent": [] },
         { "id": "s11", "name": "Code Embed", "selector": "section.cc--code-embed", "style": null, "blocks": ["embed"], "defaultContent": [] }
       ]
+    },
+    {
+      "name": "faculty",
+      "urls": ["https://gallatin.nyu.edu/academics/faculty/amanda-petrusich.html"],
+      "representativeUrl": "https://gallatin.nyu.edu/academics/faculty/amanda-petrusich.html",
+      "coverageGaps": [],
+      "description": "NYU Gallatin faculty/lecturer person-detail page: lecturer profile rendered from a Content Fragment (lecturer model: name, title, photo, bio), plus Courses, Work, and Commendations sections.",
+      "blocks": [
+        { "name": "content-fragment", "instances": ["section.cc--content-fragment"] }
+      ],
+      "sections": [
+        { "id": "f1", "name": "Lecturer Profile", "selector": "section.cc--content-fragment", "style": null, "blocks": ["content-fragment"], "defaultContent": [] },
+        { "id": "f2", "name": "Courses", "selector": "section.cc--chapter-section#courses", "style": "light", "blocks": [], "defaultContent": [] },
+        { "id": "f3", "name": "Work", "selector": "section.cc--chapter-section#work", "style": null, "blocks": [], "defaultContent": [] },
+        { "id": "f4", "name": "Commendations", "selector": "section.cc--chapter-section#commendations", "style": "light", "blocks": [], "defaultContent": [] }
+      ]
     }
   ]
 }

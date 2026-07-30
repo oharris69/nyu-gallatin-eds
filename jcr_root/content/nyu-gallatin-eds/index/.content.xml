@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent" jcr:title="Home" jcr:description="At NYU Gallatin, students cocreate rigorous academic journeys that combine disciplines, seek out connection, and prepare them for the future—on their terms." modelFields="[jcr:title,jcr:description,theme_cf_reference,theme,js-files,jcr:pagetitle,pageCategory,cq:tags]">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="deep-violet" model="section" modelFields="[name,sec-spacing,sec-spacing-bottom,style,sec-full-width]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="carousel" model="carousel" modelFields="[autoplay,autoplayInterval,imageZoom]" name="Carousel">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2026-ben-kubany-alum-portrait-homepage-hero-2000x1125.jpg" text="&lt;p&gt;&lt;strong&gt;At Gallatin,&lt;/strong&gt; I integrated concepts and frameworks across multiple disciplines.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ben Kubany, BA &#x27;23&lt;/strong&gt; Head of Business Development and Associate Project Manager at JLP+D&lt;/p&gt;&lt;p&gt;&lt;strong&gt;After Gallatin,&lt;/strong&gt; I solve complex interdisciplinary challenges for cities across the country.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/life-after-gallatin/put-your-degree-to-work.html&quot;&gt;Put Your Degree to Work&lt;/a&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2026-solmy-lee-alum-portrait-homepage-hero-2000x1125.jpg" text="&lt;p&gt;&lt;strong&gt;At Gallatin,&lt;/strong&gt; I approached each class with an intense focus on that topic, and worked with my adviser to incorporate it all into my thesis.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Solmy Lee, MA &#x27;21&lt;/strong&gt; Programme Officer, UN Office for Partnerships&lt;/p&gt;&lt;p&gt;&lt;strong&gt;After Gallatin,&lt;/strong&gt; I&#x27;ve continued to use the approach to thinking and working that I learned here to do what I do well.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/why-gallatin/education-with-intention.html&quot;&gt;Education With Intention&lt;/a&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2026-sophie-spector-alum-portrait-homepage-hero-2000x11251.png" text="&lt;p&gt;&lt;strong&gt;At Gallatin,&lt;/strong&gt; I cultivated my ability to think about challenges and express them in ways that people can understand.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Sophie Spector, BA &#x27;22&lt;/strong&gt; PhD Student, Harvard Medical School&lt;/p&gt;&lt;p&gt;&lt;strong&gt;After Gallatin,&lt;/strong&gt; I have continued my work to address very real, very targeted public health challenges.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/why-gallatin/meaningful-work.html&quot;&gt;Meaningful Work Happens Here&lt;/a&gt;&lt;/p&gt;"></item_2>
+        </block>
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/student-life/2025-10-outdoor-two-students-walking-1800x1800.jpg" imageAlt="two gallatin students on the sidewalk, walking and talking with taxi cabs and a building in the backgroud"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="It&#x27;s Your Journey" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;You chase the thrill of discovery that comes from
+                    rigorous and intentional exploration. You challenge
+                    yourself and work to find your own way. At NYU Gallatin,
+                    adventurous thinkers create unique academic journeys that
+                    span subjects, ideas, and experiences that could only
+                    happen in New York City. Curious?&lt;/p&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/academics.html" linkText="Academics at Gallatin"/>
+            </col2>
+          </row1>
+        </columns>
+      </section>
+      <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,sec-spacing,sec-spacing-bottom,style,sec-full-width]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" model="video" modelFields="[videoUrl]" name="Video" videoUrl="https://cdnapisec.kaltura.com/html5/html5lib/v2.104/mwEmbedFrame.php?wid=_&amp;entry_id=1_28gzt3o8"></block>
+        <block_1 sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="carousel" model="carousel" modelFields="[autoplay,autoplayInterval,imageZoom]" name="Carousel">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/faculty/09-2025-ben-ratliff-no-background-1200x1200.png" text="&lt;p&gt;&lt;h3&gt;The Cultural Critic&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;“As a faculty adviser, I&#x27;m a co-conspirator in a way. I can&#x27;t assume that I know why my students are here or what they&#x27;re interested in. Over months and years, I learn who my students are, what they&#x27;re interested in, and the directions they want to go. I commonly know something about the fields they&#x27;re interested in — journalism, music, critical writing — so I can help them figure out what courses, what books, what records they should be checking out to make their academic work meaningful and help them best prepare for where they want to go after graduation.”&lt;strong&gt;—Ben Ratliff, Clinical Associate Professor&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/academics/faculty/ben-ratliff.html&quot;&gt;Meet Professor Ratliff&lt;/a&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/faculty/10-2025-kwami-coleman-no-background-1200x1200.png" text="&lt;p&gt;&lt;h3&gt;The Musicologist&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;“I like to create a buffer zone for students to explore their interests in ways that may not &lt;em&gt;seem&lt;/em&gt; career oriented, but that gives them the chance to build their thinking and problem solving skills in ways that are useful for any career. They develop a toolbox that they can carry from industry to industry and career prospect to career prospect. They may not graduate from Gallatin with a particular career path printed on their diploma, but they walk away with that toolbox that&#x27;ll be with them regardless of where they go.”&lt;strong&gt;—Kwami Coleman, Associate Professor&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/academics/faculty/kwami-coleman.html&quot;&gt;Meet Professor Coleman&lt;/a&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/faculty/10-2025-julie-malnig-no-background-1200x1200.png" text="&lt;p&gt;&lt;h3&gt;The Dance Historian&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;“Advising at Gallatin is one of the most rewarding aspects of my work. I get to key in on what students&#x27; interests and passions are, and then help them develop those interests into a focused course of study. I love getting to know my students and what excites them and help guide them during their time at Gallatin.”&lt;strong&gt;—Julie Malnig, Professor&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/academics/faculty/julie-malnig.html&quot;&gt;Meet Professor Malnig&lt;/a&gt;&lt;/p&gt;"></item_2>
+        </block_1>
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="5">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/stock/2020-washington-square-arch-cropped-1500x2000.jpg" imageAlt="Looking up at the underside of the Washington Square arch, decorated with ornate stone work, and the sun casting a glare through the opening of the arch."/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="The Gallatin Effect" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Critical thinking. Creative problem solving. Strong
+                    communication. Adaptability. Confidence. Passion.
+                    Gallatin graduates are prepared for meaningful,
+                    productive futures.&lt;/p&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/life-after-gallatin/outcomes.html" linkText="Gallatin Outcomes"/>
+            </col2>
+            <col3 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="93%" titleType="h3"/>
+              <title_1 sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Class of 2025" titleType="h3"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;graduates were
+                    working, in school,
+                    or both within six
+                    months of graduation&lt;/p&gt;"/>
+            </col3>
+            <col4 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="30+" titleType="h3"/>
+              <title_1 sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Industries" titleType="h3"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;in which Classes of
+                    2025 graduates
+                    secured jobs&lt;/p&gt;"/>
+            </col4>
+            <col5 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="82%" titleType="h3"/>
+              <title_1 sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Class of 2025" titleType="h3"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;graduates used the
+                    NYU Wasserman Center
+                    for Career
+                    Development for
+                    support as they
+                    prepared for their
+                    careers&lt;/p&gt;"/>
+            </col5>
+          </row1>
+        </columns>
+        <columns_1 sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="3">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Ready to Begin?" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Start your journey.&lt;/p&gt;"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/student-life/2025-08-first-year-welcome-FW-CTA-crop-2000x909.jpg" imageAlt="A crowd of students sitting in a large room engaged in conversation with one another."/>
+            </col2>
+            <col3 jcr:primaryType="nt:unstructured">
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;&lt;a href&#x3D;&quot;/admissions/undergraduate.html&quot;&gt;Undergraduate Admissions&lt;/a&gt;&lt;a href&#x3D;&quot;/admissions/graduate.html&quot;&gt;Graduate Admissions&lt;/a&gt;&lt;a href&#x3D;&quot;/admissions/visit-gallatin.html&quot;&gt;Connect with and Visit Gallatin&lt;/a&gt;&lt;/p&gt;"/>
+            </col3>
+          </row1>
+        </columns_1>
+        <columns_2 sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/student-life/2025-08-orientation-governors-island-50-50-crop-1800x1800.jpg" imageAlt="A female-presenting student, wearing a light pink tank top and sunglasses on her head. She has long brown hair and is talking with other people. The background shows other students engaged in conversation and a yellow house in the distance."/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Learn Without Walls" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Research and internships. Creative innovation and
+                    community engagement. Study away and student-run
+                    organizations. New York City as your living, breathing
+                    classroom. Your education is about doing. So, what will
+                    you do?&lt;/p&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/academics/experiences.html" linkText="Learning Through Experience"/>
+              <button_1 sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/academics/global-study.html" linkText="Study Across the Globe"/>
+            </col2>
+          </row1>
+        </columns_2>
+        <block_2 sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="carousel" model="carousel" modelFields="[autoplay,autoplayInterval,imageZoom]" name="Carousel">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/experiential-learning/2025-wetlab-mushroom-2000x1125.jpg" text="&lt;p&gt;&lt;h3&gt;Art + Environment&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;From its home on Governors Island, the Gallatin WetLab convenes students, faculty, and the public to explore the intersections of art and science—and to seek interdisciplinary solutions to the climate crisis.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; 20 Evans Rd., Ste. A, New York, NY 10004&lt;br&gt; &lt;strong&gt;Email:&lt;/strong&gt; &lt;a href&#x3D;&quot;mailto:gallatin.wetlab@nyu.edu&quot;&gt;gallatin.wetlab@nyu.edu&lt;/a&gt;&lt;br&gt; &lt;strong&gt;Hours:&lt;/strong&gt; June–August, Fri.–Sun., 10 a.m.–4 p.m.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;https://wp.nyu.edu/gallatinwetlab/&quot;&gt;Gallatin WetLab&lt;/a&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/events/2025/2025-04-gaf-253-2000x1125.jpg" text="&lt;p&gt;&lt;h3&gt;A Festival of Creativity&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Each year, the Gallatin Arts Festival celebrates the unique artistry and interdisciplinary scholarship of Gallatin students, who come together to create unique works and produce the festival itself.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;https://wp.nyu.edu/gallatingalleries/gallatin-arts-festival/&quot;&gt;Gallatin Arts Festival&lt;/a&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/experiential-learning/2025-literacy-review-cover-2000x1125.jpg" text="&lt;p&gt;&lt;h3&gt;Literacy First&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Edited and produced by Gallatin students, &lt;em&gt;The Literacy Review&lt;/em&gt; is an annual publication of writing from adult literacy programs across New York City. Students and faculty collaborate on every aspect of this incredible work.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/academics/writing-arts.html&quot;&gt;Writing and The Arts&lt;/a&gt;&lt;/p&gt;"></item_2>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/events/2025/2025-games-fashion-show-0476-023-2000x1125.jpg" text="&lt;p&gt;&lt;h3&gt;Collaborative Couture&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;The Gallatin Fashion Show brings together student-designers from across Gallatin—and from across disciplines—to create unique collections for this annual runway show.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/academics/writing-arts.html#fashion&quot;&gt;Fashion at Gallatin&lt;/a&gt;&lt;/p&gt;"></item_3>
+          <item_4 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/experiential-learning/2023-stac-2000x1125.jpg" text="&lt;p&gt;&lt;h3&gt;Ideate and Build&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;The Science, Technology, Arts + Creativity (STAC) Makerspace at Gallatin offers students the community, training, resources, and space to bring their ideas to life—and to take their education in exciting and practical new directions.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/academics/experiences/making-innovation.html&quot;&gt;Making and Innovation&lt;/a&gt;&lt;/p&gt;"></item_4>
+        </block_2>
+        <block_3 sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2025-10-agnese-salvatico-ba-portrait-1050x1575.jpg" text="&lt;p&gt;&quot;As an international student, I wanted that diveristy as part of my college experience. Gallatin feels like the most diverse community at NYU.&quot;&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Agnese&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;&lt;h3&gt;&lt;strong&gt;BA &#x27;28&lt;/strong&gt;&lt;/h3&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2025-10-navaneeth-unnikrishnan-ba-portrait-1050x1575.jpg" text="&lt;p&gt;&quot;The community—the students, the professors, the staff—is absolutely the best thing about going to school at Gallatin.&quot;&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Navaneeth&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;&lt;h3&gt;&lt;strong&gt;BA &#x27;26&lt;/strong&gt;&lt;/h3&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2025-10-ty-dierberg-ba-portrait-900x1599.jpg" text="&lt;p&gt;&quot;Meeting my classmates has been one of the most inspiring parts of my experience at Gallatin. Gallatin students do some of the most interesting activities and are at the forefront of interdisciplinary studies. Learning about their work has been so motivating for me.&quot;&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Ty&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;&lt;h3&gt;&lt;strong&gt;BA &#x27;27&lt;/strong&gt;&lt;/h3&gt;&lt;/p&gt;"></item_2>
+        </block_3>
+        <block_4 sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/migration/gallatin-today/2025-sophie-spector-headshot-2000x1300.jpg" text="&lt;p&gt;&lt;a href&#x3D;&quot;/why-gallatin/news/gallatin-today/spring-2026/blending-disciplines-at-harvard-medical-school.html&quot;&gt;### Blending Disciplines at Harvard Medical SchoolSophie Spector&#x27;s PhD program builds on foundations she established at Gallatin&lt;/a&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/photos/portraits/students-alums/2025-howard-zheng-ba-portrait-966x768.jpg" text="&lt;p&gt;&lt;a href&#x3D;&quot;/why-gallatin/news/gallatin-today/spring-2026/the-law-through-a-new-lens.html&quot;&gt;### The Law, Through a New LensHoward Zheng&#x27;s background in philosophy and photography evolves into empathetic legal work&lt;/a&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text,style,ctastyle]" image="https://gallatin.nyu.edu/content/dam/nyugallatin/migration/news/2026/Grad%202026.jpg" text="&lt;p&gt;&lt;a href&#x3D;&quot;/why-gallatin/news/2026/05/2026_Gallatin_Graduation_Award.html&quot;&gt;### Congratulations to the Class of 2026 Gallatin Graduation Award RecipientsThe NYU Gallatin community is proud to celebrate the Class of 2026 and recognize the exceptional achievements of this year&#x27;s Gallatin Graduation Award recipients.&lt;/a&gt;&lt;/p&gt;"></item_2>
+        </block_4>
+      </section_1>
+      <section_2 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,sec-spacing,sec-spacing-bottom,style,sec-full-width]"></section_2>
+    </root>
+  </jcr:content>
+</jcr:root>

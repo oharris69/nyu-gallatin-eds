@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dam="http://www.day.com/dam/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content jcr:primaryType="dam:AssetContent"
+        cq:model="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer"
+        contentFragment="{Boolean}true"
+        jcr:title="Amanda Petrusich"
+        jcr:description="Part-time Faculty">
+        <data jcr:primaryType="nt:unstructured" cq:model="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer">
+            <master jcr:primaryType="nt:unstructured"
+                name="Amanda Petrusich"
+                title="Part-time Faculty"
+                photo="/content/dam/nyugallatin/photos/portraits/faculty/2017-10-amanda-petrusich-faculty-portrait-900x1350.jpg"
+                bio="&lt;p&gt;Amanda Petrusich is the author of several books about music, including &lt;em&gt;Do Not Sell at Any Price: The Wild, Obsessive Hunt for the World&#8217;s Rarest 78rpm Records,&lt;/em&gt; which was named one of the best books of 2014 by NPR, Slate, and BuzzFeed. Petrusich is a staff writer at &lt;em&gt;The New Yorker,&lt;/em&gt; and the recipient of a 2016 Guggenheim Fellowship in nonfiction. She garnered a 2018 Grammy nomination for Best Album Notes for her essay for Bob Dylan&#8217;s &#8220;Trouble No More,&#8221; Volume 13 in the Bootleg Series. Her work has also appeared in &lt;em&gt;The New York Times, The New York Times Magazine, The Oxford American, Pitchfork, GQ, Esquire, Playboy, The Nation, The Atlantic,&lt;/em&gt; and elsewhere. She is a commissioning editor for Bloomsbury&#8217;s 33 1/3 series, a 2015 MacDowell fellow, and a 2014 New York State Foundation for the Arts nonfiction fellow.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Education:&lt;/strong&gt; B.A., English &amp;amp; Film Studies, The College of William and Mary, 2000; M.F.A., Nonfiction, Columbia University, 2003.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Interests:&lt;/strong&gt; music and culture writing; criticism; creative nonfiction; travelogue; the personal essay; subcultures.&lt;/p&gt;"
+                jcr:primaryType="nt:unstructured">
+                <contentType jcr:primaryType="nt:unstructured"
+                    name="text/html"
+                    title="text/html"
+                    photo="image/jpeg"
+                    bio="text/html"/>
+            </master>
+        </data>
+    </jcr:content>
+</jcr:root>
