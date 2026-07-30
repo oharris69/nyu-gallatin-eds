@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.1 — 2026-07-30T04:00:00Z
+- Register /conf/nyu-gallatin-eds as a titled config container ('NYU Gallatin EDS') so CF models appear in the Content Fragment Models console; broaden filter to whole /conf/nyu-gallatin-eds
+- Artifact: dist/nyu-gallatin-homepage-1.4.1.zip
+
 ## 1.4.0 — 2026-07-30T03:00:00Z
 - Add rich faculty-profile CF model + Amanda Petrusich faculty CF (name/role/dept/email/pronouns/shortBio/bio/education/researchInterests/publications/awards); repoint faculty page to new CF
 - Artifact: dist/nyu-gallatin-homepage-1.4.0.zip
