@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.3.1 — 2026-07-30T01:00:00Z
+- Nav sections need unique node names (section/section_1/section_2); JCR kept only last on import
+- Artifact: dist/nyu-gallatin-homepage-1.3.1.zip
+
 ## 1.3.0 — 2026-07-30T00:00:00Z
 - Split nav into brand/sections/tools sections (fixes flat/expanded menu); violet banner via --nav-background-color token; scoped brand logo mask
 - Artifact: dist/nyu-gallatin-homepage-1.3.0.zip
