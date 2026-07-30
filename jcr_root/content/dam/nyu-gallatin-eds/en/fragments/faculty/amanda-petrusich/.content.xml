@@ -5,13 +5,13 @@
     jcr:primaryType="dam:Asset">
     <jcr:content
         jcr:primaryType="dam:AssetContent"
-        cq:model="/conf/nyu/settings/dam/cfm/models/faculty-profile"
+        cq:model="/conf/nyu-gallatin-eds/settings/dam/cfm/models/faculty-profile"
         contentFragment="{Boolean}true"
         jcr:title="Amanda Petrusich"
         jcr:description="Part-time Faculty">
         <data
             jcr:primaryType="nt:unstructured"
-            cq:model="/conf/nyu/settings/dam/cfm/models/faculty-profile"
+            cq:model="/conf/nyu-gallatin-eds/settings/dam/cfm/models/faculty-profile"
             sling:resourceType="dam/cfm/models/console/components/data/entity/default">
             <master
                 jcr:primaryType="nt:unstructured"

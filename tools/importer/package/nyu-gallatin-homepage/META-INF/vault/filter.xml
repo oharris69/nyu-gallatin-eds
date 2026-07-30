@@ -3,6 +3,6 @@
     <filter root="/content/nyu-gallatin-eds/language-masters/en"/>
     <filter root="/content/dam/nyu-gallatin-eds/en/fragments/lecturers/amanda-petrusich"/>
     <filter root="/content/dam/nyu-gallatin-eds/en/fragments/faculty/amanda-petrusich"/>
-    <filter root="/conf/nyu/settings/dam/cfm/models/faculty-profile"/>
-    <filter root="/conf/nyu/settings/dam/cfm/models/lecturer"/>
+    <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/faculty-profile" mode="replace"/>
+    <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer" mode="replace"/>
 </workspaceFilter>
