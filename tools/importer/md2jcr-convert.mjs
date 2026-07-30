@@ -19,16 +19,20 @@ const filters = JSON.parse(fs.readFileSync(path.join(REPO, 'component-filters.js
 
 const opts = { models, definition, filters };
 
-// site path under jcr_root
+// site path under jcr_root. Content is rooted at the language master (en) so it
+// matches the project's PATH_PREFIX ('/language-masters') — the header/footer/CF
+// blocks resolve nav/footer at /content/{site}/language-masters/{lang}/... in AEM
+// author — and so it is MSM-ready (en = the blueprint/live-copy source).
 const SITE = 'content/nyu-gallatin-eds';
+const LM = `${SITE}/language-masters/en`; // homepage IS the en language-root page
 const JCR_ROOT = path.join(REPO, 'jcr_root');
 
 // Documents to convert: { md source, jcr path (under site) }
 const DOCS = [
-  { md: 'content/index.md', jcr: `${SITE}/index` },
-  { md: 'content/en/nav.md', html: 'content/en/nav.plain.html', jcr: `${SITE}/en/nav` },
-  { md: 'content/en/footer.md', html: 'content/en/footer.plain.html', jcr: `${SITE}/en/footer` },
-  { md: 'content/academics/faculty/amanda-petrusich.md', jcr: `${SITE}/academics/faculty/amanda-petrusich` },
+  { md: 'content/index.md', jcr: `${LM}` },
+  { md: 'content/en/nav.md', html: 'content/en/nav.plain.html', jcr: `${LM}/nav` },
+  { md: 'content/en/footer.md', html: 'content/en/footer.plain.html', jcr: `${LM}/footer` },
+  { md: 'content/academics/faculty/amanda-petrusich.md', jcr: `${LM}/academics/faculty/amanda-petrusich` },
 ];
 
 // md2jcr needs markdown; nav/footer only have .plain.html. Wrap their HTML as a
