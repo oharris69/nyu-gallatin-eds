@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/content/nyu-gallatin-eds/index"/>
+    <filter root="/content/nyu-gallatin-eds/en/nav"/>
+    <filter root="/content/nyu-gallatin-eds/en/footer"/>
+    <filter root="/content/nyu-gallatin-eds/academics/faculty/amanda-petrusich"/>
+    <filter root="/content/dam/nyu-gallatin-eds/lecturers/amanda-petrusich"/>
+    <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer"/>
+</workspaceFilter>

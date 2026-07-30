@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,sec-spacing,sec-spacing-bottom,style,sec-full-width]">
+        <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/" linkText="NYU Gallatin School of Individualized Study"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;1 Washington Place&lt;br&gt;
+                    New York, NY 10003&lt;/p&gt;"/>
+        <button_1 sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="tel:2129987370" linkText="212.998.7370" linkType="primary"/>
+        <text_1 sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;&lt;a href&#x3D;&quot;https://www.facebook.com/nyugallatin&quot;&gt;Facebook&lt;/a&gt; &lt;a href&#x3D;&quot;https://www.instagram.com/nyugallatin/&quot;&gt;Instagram&lt;/a&gt; &lt;a href&#x3D;&quot;https://www.linkedin.com/school/nyugallatin/&quot;&gt;LinkedIn&lt;/a&gt; &lt;a href&#x3D;&quot;https://www.youtube.com/user/nyugallatin&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;"/>
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="About" titleType="h2"/>
+        <text_2 sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/mission.html&quot;&gt;Mission and Learning Goals&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/info-for/current-students.html#academics&quot;&gt;Academic Policies and Procedures&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/staff-directory.html&quot;&gt;Staff Directory&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/why-gallatin/news/gallatin-today.html&quot;&gt;Gallatin Today&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/careers.html&quot;&gt;Careers&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+        <title_1 sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Resources" titleType="h2"/>
+        <text_3 sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/admissions/undergraduate/mailing.html&quot;&gt;Undergraduate Request Information&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://apply.gallatin.nyu.edu/portal/startyourjourney&quot;&gt;Graduate Request Information&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.givecampus.com/campaigns/21843/donations/new&quot;&gt;Give&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+        <title_2 sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Info For" titleType="h2"/>
+        <text_4 sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/info-for/current-students.html&quot;&gt;Current Students&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/info-for/alumni.html&quot;&gt;Alumni&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/info-for/faculty.html&quot;&gt;Faculty&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/info-for/staff.html&quot;&gt;Staff&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/info-for/families.html&quot;&gt;Families&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;&lt;p&gt;Copyright © 2026 NYU Gallatin&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;https://www.nyu.edu/footer/privacy.html&quot;&gt;Privacy Policy&lt;/a&gt; &lt;a href&#x3D;&quot;https://www.nyu.edu/footer/accessibility.html&quot;&gt;Accessibility&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Equal Opportunity and Non-Discrimination at NYU&lt;/strong&gt;: New York University is committed to maintaining an environment that encourages and fosters respect for individual values and appropriate conduct among all persons. In all University spaces—physical and digital—programming, activities, and events are carried out in accordance with applicable law as well as University policy, which includes but is not limited to its &lt;a href&#x3D;&quot;https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/harassment-and-discrimination.html&quot;&gt;Non-Discrimination and Anti-Harassment Policy&lt;/a&gt;.&lt;/p&gt;"/>
+      </section>
+    </root>
+  </jcr:content>
+</jcr:root>
