@@ -7,7 +7,8 @@
     allowedPaths="[/content/dam/nyu-gallatin-eds(/.*)?]"
     status="enabled">
     <jcr:content jcr:primaryType="nt:unstructured" sling:resourceType="dam/cfm/models/console/components/data/entity/default">
-        <model sling:resourceType="wcm/scaffolding/components/scaffolding" jcr:primaryType="nt:unstructured">
+        <model sling:resourceType="wcm/scaffolding/components/scaffolding" jcr:primaryType="nt:unstructured"
+            cq:templateType="/libs/settings/dam/cfm/model-types/fragment">
             <cq:dialog jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog">
                 <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
                     <items jcr:primaryType="nt:unstructured">

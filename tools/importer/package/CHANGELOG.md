@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.2 — 2026-07-30T05:00:00Z
+- Add cq:templateType=/libs/settings/dam/cfm/model-types/fragment to both CF models so AEM recognizes them as Content Fragment models and lists them in the New CF dialog
+- Artifact: dist/nyu-gallatin-homepage-1.4.2.zip
+
 ## 1.4.1 — 2026-07-30T04:00:00Z
 - Register /conf/nyu-gallatin-eds as a titled config container ('NYU Gallatin EDS') so CF models appear in the Content Fragment Models console; broaden filter to whole /conf/nyu-gallatin-eds
 - Artifact: dist/nyu-gallatin-homepage-1.4.1.zip
