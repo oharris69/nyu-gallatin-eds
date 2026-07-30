@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.5 — 2026-07-30T08:00:00Z
+- Move CF model metadata (jcr:title, status, allowedPaths, description) from cq:Template root node to jcr:content, where AEMaaCS reads it; root-node placement (AEM 6.x scaffolding style) left status unreadable so the New CF dialog filtered our models out
+- Artifact: dist/nyu-gallatin-homepage-1.4.5.zip
+
 ## 1.4.4 — 2026-07-30T07:00:00Z
 - Fix faculty-profile multi-value fields (education, researchInterests): use textfield + multiple=true + valueType string[] (CF model pattern) instead of Granite multifield wrapper, which AEM could not parse (installed with no name/valueType)
 - Artifact: dist/nyu-gallatin-homepage-1.4.4.zip
