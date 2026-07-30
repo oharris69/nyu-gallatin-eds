@@ -1,22 +1,22 @@
 {
   "mappings": [
-    "/content/wknd-universal/language-masters/en:/",
-    "/content/wknd-universal/language-masters/en/:/en/",
-    "/content/wknd-universal/language-masters/fr/:/fr/",
-    "/content/wknd-universal/language-masters/fr:/fr",
-    "/content/wknd-universal/language-masters/es/:/es/",
-    "/content/wknd-universal/language-masters/es:/es",
-    "/content/wknd-universal/language-masters/ja/:/ja/",
-    "/content/wknd-universal/language-masters/ja:/ja",
-    "/content/wknd-universal/language-masters/de/:/de/",
-    "/content/wknd-universal/language-masters/de:/de",
-    "/content/wknd-universal/configuration:/.helix/config.json",
-    "/content/wknd-universal/metadata:/metadata.json",
-    "/content/wknd-universal/redirects:/redirects.json",
-    "/content/wknd-universal/placeholders:/placeholders.json"
+    "/content/nyu-gallatin-eds/language-masters/en:/",
+    "/content/nyu-gallatin-eds/language-masters/en/:/en/",
+    "/content/nyu-gallatin-eds/language-masters/fr/:/fr/",
+    "/content/nyu-gallatin-eds/language-masters/fr:/fr",
+    "/content/nyu-gallatin-eds/language-masters/es/:/es/",
+    "/content/nyu-gallatin-eds/language-masters/es:/es",
+    "/content/nyu-gallatin-eds/language-masters/ja/:/ja/",
+    "/content/nyu-gallatin-eds/language-masters/ja:/ja",
+    "/content/nyu-gallatin-eds/language-masters/de/:/de/",
+    "/content/nyu-gallatin-eds/language-masters/de:/de",
+    "/content/nyu-gallatin-eds/configuration:/.helix/config.json",
+    "/content/nyu-gallatin-eds/metadata:/metadata.json",
+    "/content/nyu-gallatin-eds/redirects:/redirects.json",
+    "/content/nyu-gallatin-eds/placeholders:/placeholders.json"
   ],
   "includes": [
-    "/content/wknd-universal/",
-    "/content/dam/wknd-universal/"
+    "/content/nyu-gallatin-eds/",
+    "/content/dam/nyu-gallatin-eds/"
   ]
 }
