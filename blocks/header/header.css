@@ -596,7 +596,8 @@ header .nav-brand > .default-content-wrapper > p:first-child > a {
    ============================================================ */
 @media (width >= 900px) {
   /* --- two-row layout: brand + tools pill on top, menu below --- */
-  header nav {
+  header nav,
+  header nav[aria-expanded='true'] {
     display: grid;
     grid-template:
       'brand . tools' auto
@@ -607,6 +608,7 @@ header .nav-brand > .default-content-wrapper > p:first-child > a {
     min-height: 0;
     height: auto;
     padding: 18px 32px;
+    overflow: visible;
   }
 
   header nav .nav-brand {
