@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.5.2 — 2026-07-31T05:00:00Z
+- Revert faculty page to authored content (name/photo/bio). The CTA CF renders in AEM Author/UE but the publish-tier ref-demo-eds CTAByPath persisted query can't resolve a NYU-config-scoped fragment (no NYU-scoped query on this instance). Authored content renders everywhere on live; CF+Social variant remain for the UE demo.
+- Artifact: dist/nyu-gallatin-homepage-1.5.2.zip
+
 ## 1.5.1 — 2026-07-31T04:00:00Z
 - Embed CTA-model Content Fragment on faculty page: swap authored profile section back to a content-fragment block referencing /content/dam/nyu-gallatin-eds/en/fragments/faculty/amanda-petrusich (created via UI on the working CTA model, resolves via ref-demo-eds/CTAByPath). Courses/Work/Commendations sections unchanged.
 - Artifact: dist/nyu-gallatin-homepage-1.5.1.zip
