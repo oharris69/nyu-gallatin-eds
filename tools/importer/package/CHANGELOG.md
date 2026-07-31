@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.5.0 — 2026-07-31T03:00:00Z
+- Faculty page: replace Content Fragment block with standard authored content (name h1 + photo + bio). Removes CF/config dependency that could not resolve in this AEM instance (dropdown stuck on inherited ref-demo-eds default). Package now ships site content only -- no /conf writes, no CF instances. Clears 'Failed to prepare references'.
+- Artifact: dist/nyu-gallatin-homepage-1.5.0.zip
+
 ## 1.4.9 — 2026-07-31T02:00:00Z
 - Ship proper sling:OrderedFolder definitions for en/fragments/faculty/lecturers. They were auto-created as bare nt:folder (malformed) -> Assets UI 'Fail to load data', folders unopenable, CF hidden, and no valid jcr:content to hold cq:conf (so cloud-config binding never took, dropdown stuck on ref-demo-eds). faculty/lecturers use mode=replace to overwrite the malformed nodes; en/fragments scoped to avoid touching sibling folders.
 - Artifact: dist/nyu-gallatin-homepage-1.4.9.zip
