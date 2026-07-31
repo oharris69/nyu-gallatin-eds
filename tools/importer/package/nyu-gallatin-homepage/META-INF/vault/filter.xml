@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/content/nyu-gallatin-eds/language-masters/en"/>
-    <filter root="/content/dam/nyu-gallatin-eds/en/fragments/lecturers/amanda-petrusich"/>
-    <filter root="/content/dam/nyu-gallatin-eds/en/fragments/faculty/amanda-petrusich"/>
+    <!-- Upgrade the en + fragments container nodes to proper sling:OrderedFolder
+         WITHOUT touching sibling folders (Music, Promotions, etc.) the user created. -->
+    <filter root="/content/dam/nyu-gallatin-eds/en">
+        <include pattern="/content/dam/nyu-gallatin-eds/en"/>
+        <include pattern="/content/dam/nyu-gallatin-eds/en/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/nyu-gallatin-eds/en/fragments">
+        <include pattern="/content/dam/nyu-gallatin-eds/en/fragments"/>
+        <include pattern="/content/dam/nyu-gallatin-eds/en/fragments/jcr:content(/.*)?"/>
+    </filter>
+    <!-- We own these two subtrees entirely (folder def + Amanda CF): replace the
+         malformed bare nt:folder nodes with proper sling:OrderedFolder + the CF. -->
+    <filter root="/content/dam/nyu-gallatin-eds/en/fragments/faculty" mode="replace"/>
+    <filter root="/content/dam/nyu-gallatin-eds/en/fragments/lecturers" mode="replace"/>
     <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/faculty-profile" mode="replace"/>
     <filter root="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer" mode="replace"/>
 </workspaceFilter>
