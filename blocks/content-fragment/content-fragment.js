@@ -15,8 +15,12 @@ import { getHostname, mapAemPathToSitePath } from '../../scripts/utils.js';
 export default async function decorate(block) {
   // Configuration
   const CONFIG = {
-    WRAPPER_SERVICE_URL: 'https://3635370-refdemoapigateway-stage.adobeioruntime.net/api/v1/web/ref-demo-api-gateway/fetch-cf',
     GRAPHQL_QUERY: '/graphql/execute.json/ref-demo-eds/CTAByPath',
+    // Publish tier for this AEM instance. The published EDS site has no
+    // hostname placeholder/metadata, so fall back to this known publish host.
+    // Publish GraphQL is CORS-open to *.aem.live, so the block queries it
+    // directly (the old external wrapper proxy returned HTTP 500).
+    DEFAULT_PUBLISH_URL: 'https://publish-p7954-e1482380.adobeaemcloud.com',
     EXCLUDED_THEME_KEYS: new Set(['brandSite', 'brandLogo']),
   };
 
@@ -24,7 +28,8 @@ export default async function decorate(block) {
   const hostname = hostnameFromPlaceholders || getMetadata('hostname');
   const aemauthorurl = getMetadata('authorurl') || '';
 
-  const aempublishurl = hostname?.replace('author', 'publish')?.replace(/\/$/, '');
+  const aempublishurl = (hostname?.replace('author', 'publish')?.replace(/\/$/, ''))
+    || CONFIG.DEFAULT_PUBLISH_URL;
 
   const contentPath = block.querySelector(':scope div:nth-child(1) > div a')?.textContent?.trim();
 
@@ -36,23 +41,15 @@ export default async function decorate(block) {
   block.innerHTML = '';
   const isAuthor = isAuthorEnvironment();
 
-  // Prepare request configuration based on environment
-  const requestConfig = isAuthor
-    ? {
-      url: `${aemauthorurl}${CONFIG.GRAPHQL_QUERY};path=${contentPath};variation=${variationname};ts=${Date.now()}`,
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    }
-    : {
-      url: `${CONFIG.WRAPPER_SERVICE_URL}`,
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        graphQLPath: `${aempublishurl}${CONFIG.GRAPHQL_QUERY}`,
-        cfPath: contentPath,
-        variation: `${variationname};ts=${Date.now()}`,
-      }),
-    };
+  // Query the CF via the AEM GraphQL persisted query directly (author on
+  // author env, publish on the published site). Publish GraphQL is CORS-open
+  // to *.aem.live, so no external proxy is needed.
+  const baseUrl = isAuthor ? aemauthorurl : aempublishurl;
+  const requestConfig = {
+    url: `${baseUrl}${CONFIG.GRAPHQL_QUERY};path=${contentPath};variation=${variationname};ts=${Date.now()}`,
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
+  };
 
   try {
     // Fetch data
