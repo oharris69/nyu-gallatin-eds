@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.5.3 — 2026-07-31T06:00:00Z
+- Restore CF block on faculty page (demo shows Amanda CF in Universal Editor, which resolves via author GraphQL). Live shows blank block by design - demo is Author/UE-centric, not live-dependent. Reconciles git with the installed author state (v1.5.1).
+- Artifact: dist/nyu-gallatin-homepage-1.5.3.zip
+
 ## 1.5.2 — 2026-07-31T05:00:00Z
 - Revert faculty page to authored content (name/photo/bio). The CTA CF renders in AEM Author/UE but the publish-tier ref-demo-eds CTAByPath persisted query can't resolve a NYU-config-scoped fragment (no NYU-scoped query on this instance). Authored content renders everywhere on live; CF+Social variant remain for the UE demo.
 - Artifact: dist/nyu-gallatin-homepage-1.5.2.zip
