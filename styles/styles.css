@@ -45,8 +45,8 @@
   /* brand-scoped header/footer variables with sensible defaults */
   --nav-background-color: var(--brand-nav-background-color, var(--gallatin-violet, #57068c));
   --nav-text-color: var(--brand-nav-text-color, #fff);
-  --footer-background-color: var(--brand-footer-background-color, #000);
-  --footer-text-color: var(--brand-footer-text-color, #fff);
+  --footer-background-color: var(--brand-footer-background-color, #fff);
+  --footer-text-color: var(--brand-footer-text-color, #000);
   
   /* fonts */
   --body-font-family: 'Adobe Clean', roboto, roboto-fallback, sans-serif;
@@ -414,6 +414,18 @@ header {
   left: 0;
   right: 0;
   z-index: 111;
+}
+
+/* Offset page content below the fixed header so it isn't hidden underneath.
+   Header is two-row on desktop (~150px), single compact row on mobile. */
+main {
+  padding-top: 96px;
+}
+
+@media (width >= 900px) {
+  main {
+    padding-top: 150px;
+  }
 }
 
 header .header,

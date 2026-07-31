@@ -1,41 +1,91 @@
+/* NYU Gallatin footer — light theme, multi-column, matches gallatin.nyu.edu */
 footer {
-  background-color: var(--dark-color);
-  font-size: var(--body-font-size-xs);
-  font-family: var(--light-font-family);
-  background-color: var(--dark-color-opacity);
-  background-color: #000;
+  background-color: #fff;
+  color: var(--text-color, #000);
+  font-size: var(--body-font-size-s);
+  font-family: var(--body-font-family);
   width: 100%;
   z-index: 2;
-  color: #ffffff;
 }
 
-footer .footer > div {
+footer .footer {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 48px 24px 32px;
 }
 
 footer .footer p {
-  margin: 0;
+  margin: 0 0 0.5em;
 }
 
+/* NYU torch/wordmark logo (rendered as image in the footer brand block) */
 footer .footer img {
-  width: 100px;
+  width: 220px;
   height: auto;
   margin-bottom: 20px;
 }
 
 footer .footer a {
-  color: #ffffff;
+  color: var(--text-color, #000);
   text-decoration: none;
 }
 
 footer .footer a:hover {
-  color: var(--main-accent-color);
+  color: var(--gallatin-violet, #57068c);
+  text-decoration: underline;
+}
+
+/* Column section headings (About / Resources / Info For) */
+footer .footer h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gallatin-violet, #57068c);
+  margin: 0 0 16px;
+}
+
+/* Lists: no bullets, comfortable spacing */
+footer .footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer li {
+  margin: 0 0 12px;
+}
+
+/* Social row inline */
+footer .footer .default-content-wrapper > p:has(a[href*="facebook"]),
+footer .footer .default-content-wrapper > p:has(a[href*="instagram"]) {
+  display: inline;
+}
+
+/* Bottom legal bar: separated, muted */
+footer .footer > div:last-child {
+  border-top: 1px solid #dadada;
+  margin-top: 24px;
+  padding-top: 24px;
+  font-size: var(--body-font-size-xs);
+  color: #555;
+}
+
+footer .footer > div:last-child a {
+  color: var(--gallatin-violet, #57068c);
+  text-decoration: underline;
 }
 
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 50px 32px;
+  footer .footer {
+    padding: 56px 32px 32px;
+  }
+
+  /* Top area: the three link-column section becomes a 3-col grid;
+     the brand/contact section sits to its left. */
+  footer .footer .default-content-wrapper:has(h2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
   }
 }
