@@ -35,7 +35,7 @@
           listOrder="3" filter="hierarchy" nameSuffix="contentReference" rootPath="/content/dam" showThumbnail="true" showEmptyInReadOnly="true" renderReadOnly="false"/>
         <bio jcr:primaryType="nt:unstructured"
           sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
-          fieldLabel="Biography" name="bio" valueType="string" metaType="text-rich"
+          fieldLabel="Biography" name="bio" valueType="string/multiline" metaType="text-multi"
           listOrder="4" cfm-element="Biography" default-mime-type="text/html" showEmptyInReadOnly="true" renderReadOnly="false"/>
                     </items>
                 </content>

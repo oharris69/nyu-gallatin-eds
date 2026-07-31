@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.8 — 2026-07-31T01:00:00Z
+- Fix rich-text fields: bio/publications/awards used invalid metaType=text-rich + valueType=string, which AEM silently dropped on install (model installed with only 10 of 13 fields). Change to the valid multiline multieditor pattern (valueType=string/multiline, metaType=text-multi, default-mime-type=text/html) matching the shortBio field that survived.
+- Artifact: dist/nyu-gallatin-homepage-1.4.8.zip
+
 ## 1.4.7 — 2026-07-31T00:00:00Z
 - Regenerate CF models to mirror working Spring Green structure exactly: jcr:content=cq:PageContent with cq:templateType+status+cq:scaffolding+resourceSuperType; model=cq:PageContent w/ dataTypesConfig+targetPath; content=fixedcolumns; ranking+allowedPaths on root. Fixes models missing from New CF dropdown.
 - Artifact: dist/nyu-gallatin-homepage-1.4.7.zip

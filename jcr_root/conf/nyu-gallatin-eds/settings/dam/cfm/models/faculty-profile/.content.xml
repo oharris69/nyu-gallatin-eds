@@ -55,7 +55,7 @@
           listOrder="8" cfm-element="Short Bio" default-mime-type="text/plain" showEmptyInReadOnly="true" renderReadOnly="false"/>
         <bio jcr:primaryType="nt:unstructured"
           sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
-          fieldLabel="Biography" name="bio" valueType="string" metaType="text-rich"
+          fieldLabel="Biography" name="bio" valueType="string/multiline" metaType="text-multi"
           listOrder="9" cfm-element="Biography" default-mime-type="text/html" showEmptyInReadOnly="true" renderReadOnly="false"/>
         <education jcr:primaryType="nt:unstructured"
           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -67,11 +67,11 @@
           listOrder="11" multiple="{Boolean}true" showEmptyInReadOnly="true" renderReadOnly="false"/>
         <publications jcr:primaryType="nt:unstructured"
           sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
-          fieldLabel="Publications" name="publications" valueType="string" metaType="text-rich"
+          fieldLabel="Publications" name="publications" valueType="string/multiline" metaType="text-multi"
           listOrder="12" cfm-element="Publications" default-mime-type="text/html" showEmptyInReadOnly="true" renderReadOnly="false"/>
         <awards jcr:primaryType="nt:unstructured"
           sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
-          fieldLabel="Awards &amp; Honors" name="awards" valueType="string" metaType="text-rich"
+          fieldLabel="Awards &amp; Honors" name="awards" valueType="string/multiline" metaType="text-multi"
           listOrder="13" cfm-element="Awards &amp; Honors" default-mime-type="text/html" showEmptyInReadOnly="true" renderReadOnly="false"/>
                     </items>
                 </content>
