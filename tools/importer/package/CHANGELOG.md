@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.5.1 — 2026-07-31T04:00:00Z
+- Embed CTA-model Content Fragment on faculty page: swap authored profile section back to a content-fragment block referencing /content/dam/nyu-gallatin-eds/en/fragments/faculty/amanda-petrusich (created via UI on the working CTA model, resolves via ref-demo-eds/CTAByPath). Courses/Work/Commendations sections unchanged.
+- Artifact: dist/nyu-gallatin-homepage-1.5.1.zip
+
 ## 1.5.0 — 2026-07-31T03:00:00Z
 - Faculty page: replace Content Fragment block with standard authored content (name h1 + photo + bio). Removes CF/config dependency that could not resolve in this AEM instance (dropdown stuck on inherited ref-demo-eds default). Package now ships site content only -- no /conf writes, no CF instances. Clears 'Failed to prepare references'.
 - Artifact: dist/nyu-gallatin-homepage-1.5.0.zip
