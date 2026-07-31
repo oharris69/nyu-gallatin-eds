@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="cq:Template">
-    <jcr:content jcr:primaryType="nt:unstructured"
-        sling:resourceType="dam/cfm/models/console/components/data/entity/default"
+    jcr:primaryType="cq:Template"
+    ranking="{Long}100"
+    allowedPaths="[/content/dam/nyu-gallatin-eds(/.*)?]">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
         jcr:title="Lecturer"
         jcr:description="Faculty lecturer profile: name, title, photo, and biography."
-        allowedPaths="[/content/dam/nyu-gallatin-eds(/.*)?]"
+        sling:resourceType="dam/cfm/models/console/components/data/entity/default"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity"
+        cq:scaffolding="/conf/nyu-gallatin-eds/settings/dam/cfm/models/lecturer/jcr:content/model"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
         status="enabled">
-        <model sling:resourceType="wcm/scaffolding/components/scaffolding" jcr:primaryType="nt:unstructured"
-            cq:templateType="/libs/settings/dam/cfm/model-types/fragment">
+        <model jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            cq:targetPath="/content/dam/nyu-gallatin-eds"
+            maxGeneratedOrder="20">
             <cq:dialog jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog">
-                <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
-                    <items jcr:primaryType="nt:unstructured">
-                        <name jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Name" name="name" required="{Boolean}true"
-                            valueType="string" metaType="text-single"/>
-                        <title jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Title" name="title"
-                            valueType="string" metaType="text-single"/>
-                        <photo jcr:primaryType="nt:unstructured"
-                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                            fieldLabel="Photo" name="photo"
-                            valueType="string" metaType="content-reference"
-                            fileReferenceParameter="./photo"/>
-                        <bio jcr:primaryType="nt:unstructured"
-                            sling:resourceType="dam/cfm/models/editor/components/rteledit"
-                            fieldLabel="Biography" name="bio"
-                            valueType="string" metaType="text-rich" default=""/>
+                <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items jcr:primaryType="nt:unstructured" maxGeneratedOrder="20">
+        <name jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+          fieldLabel="Name" name="name" valueType="string" metaType="text-single"
+          listOrder="1" maxlength="255" showEmptyInReadOnly="true" renderReadOnly="false" required="on"/>
+        <title jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+          fieldLabel="Title" name="title" valueType="string" metaType="text-single"
+          listOrder="2" maxlength="255" showEmptyInReadOnly="true" renderReadOnly="false"/>
+        <photo jcr:primaryType="nt:unstructured"
+          sling:resourceType="dam/cfm/models/editor/components/contentreference"
+          fieldLabel="Photo" name="photo" valueType="string/reference" metaType="reference"
+          listOrder="3" filter="hierarchy" nameSuffix="contentReference" rootPath="/content/dam" showThumbnail="true" showEmptyInReadOnly="true" renderReadOnly="false"/>
+        <bio jcr:primaryType="nt:unstructured"
+          sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+          fieldLabel="Biography" name="bio" valueType="string" metaType="text-rich"
+          listOrder="4" cfm-element="Biography" default-mime-type="text/html" showEmptyInReadOnly="true" renderReadOnly="false"/>
                     </items>
                 </content>
             </cq:dialog>

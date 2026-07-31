@@ -1,5 +1,9 @@
 # nyu-gallatin-homepage — package changelog
 
+## 1.4.7 — 2026-07-31T00:00:00Z
+- Regenerate CF models to mirror working Spring Green structure exactly: jcr:content=cq:PageContent with cq:templateType+status+cq:scaffolding+resourceSuperType; model=cq:PageContent w/ dataTypesConfig+targetPath; content=fixedcolumns; ranking+allowedPaths on root. Fixes models missing from New CF dropdown.
+- Artifact: dist/nyu-gallatin-homepage-1.4.7.zip
+
 ## 1.4.6 — 2026-07-30T09:00:00Z
 - Consolidate CF models under /conf/nyu-gallatin-eds (matches Config Browser container + DAM folder binding); ship v1.4.5-correct models with mode=replace to overwrite stale root-node-metadata copies; repoint CF instances cq:model
 - Artifact: dist/nyu-gallatin-homepage-1.4.6.zip
